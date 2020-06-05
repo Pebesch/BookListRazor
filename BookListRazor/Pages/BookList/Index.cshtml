@@ -6,7 +6,7 @@
         <h2 class="ext-info">Book List</h2>
     </div>
     <div class="col-3">
-        <a asp-page="Create" class="btn btn-info form-control text-white">Create New Book</a>
+        <a asp-page="Upsert" class="btn btn-info form-control text-white">Create New Book</a>
     </div>
 
     <div class="col-12 border p-3 mt-3">
@@ -42,7 +42,7 @@
                             </td>
                             <td>
                                 <button asp-page-handler="Delete" asp-route-id="@item.Id" onclick="return confirm('Are you sure you want to delete?)" class="btn btn-danger btn-sm">Delete</button>
-                                <a asp-page="Edit" asp-route-id="@item.Id" class="btn btn-succsess bg-success btn-sm text-white" role="button">Edit</a>
+                                <a asp-page="Upsert" asp-route-id="@item.Id" class="btn btn-succsess bg-success btn-sm text-white" role="button">Edit</a>
                             </td>
                         </tr>
                     }

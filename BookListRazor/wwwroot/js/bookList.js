@@ -24,7 +24,7 @@ function loadDataTable() {
                             Delete
                         </a>
                         &nbsp;
-                        <a href="/BookList/Edit?id=${data}" class='btn btn-success text-white' style='cursor:pointer; width:70px;'>
+                        <a href="/BookList/Upsert?id=${data}" class='btn btn-success text-white' style='cursor:pointer; width:70px;'>
                             Edit
                         </a>
                         </div>`;
